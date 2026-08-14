@@ -1,11 +1,15 @@
 # dsh-skill-panel
 
+[English](README.md)
+
 一个 DeepSeek Harness 插件：在设置页新增「技能」面板，用于管理和查看本地技能目录：
 
 - 全局：`~/.agents/skills`（遵循 `DSH_AGENTS_HOME`）
 - 项目级：每个已注册工作区的 `<workspace>/.agents/skills`
 
 面板列出每个技能，展示描述、正文与目录内容，支持当前作用域内搜索、删除技能、在系统文件管理器中打开目录。内置中英文文案。
+
+![dsh-skill-panel 设置面板](ScreenShot-dsh-skill-panel.png)
 
 ## 结构
 
@@ -23,13 +27,17 @@ node --test tests/catalog.test.mjs
 
 ## 集成
 
-以 bundle 方式安装进 profile：
+以 bundle 方式安装进 profile，本地路径：
 
 ```
 dsh plugin --profile web add file:/path/to/dsh-skill-panel
 ```
 
-包内 `dsh.bundle.patch` 插入一行挂载项；profile 修复后的 `node_modules` 解析裸包名。Host 插件集变更需重启服务生效；客户端 bundle 变更重新构建后刷新页面即可。
+或直接从 GitHub 安装：
+
+```
+dsh plugin --profile web add git+https://github.com/hexbee/dsh-skill-panel.git
+```
 
 ## 安全
 
