@@ -1,0 +1,5 @@
+# dsh-skill-panel bundle patch: mount the host plugin under its package name,
+# resolved through the profile's node_modules.
+- insert:
+    - id: dsh-skill-panel
+      name: dsh-skill-panel

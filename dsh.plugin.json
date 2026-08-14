@@ -1,0 +1,12 @@
+{
+  "name": "dsh-skill-panel",
+  "description": "Settings panel for viewing and managing ~/.agents/skills and per-project .agents/skills",
+  "version": "0.1.0",
+  "entry": {
+    "name": "dsh-skill-panel",
+    "inject": []
+  },
+  "client": {
+    "platform": "web"
+  }
+}
