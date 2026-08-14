@@ -41,7 +41,7 @@ export const cssText = `
   display: flex;
   align-items: center;
   gap: 8px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .dsh_skill_panel_dropdown {
   position: relative;
@@ -163,6 +163,7 @@ export const cssText = `
 }
 .dsh_skill_panel_button {
   appearance: none;
+  flex: none;
   font: inherit;
   cursor: pointer;
   border: 1px solid var(--dsw-alias-border-l2);
