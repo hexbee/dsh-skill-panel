@@ -9,7 +9,7 @@ A DeepSeek Harness plugin that adds a **Skills** panel to the settings page for 
 
 The panel lists each skill, shows its description, body and directory contents, supports searching across the current scope, removing skills, and opening the directory in the system file manager. Chinese and English copy included.
 
-![dsh-skill-panel settings panel](ScreenShot-dsh-skill-panel.png)
+![dsh-skill-panel settings panel](ScreenShot-dsh-skill-panel-en.png)
 
 ## Layout
 
